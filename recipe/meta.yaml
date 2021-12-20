@@ -1,7 +1,6 @@
 {% set name = "pyperformance" %}
 {% set version = "1.0.3" %}
 
-
 package:
   name: {{ name|lower }}
   version: {{ version }}
@@ -28,7 +27,6 @@ requirements:
 test:
   imports:
     - pyperformance
-    - pyperformance.benchmarks
   commands:
     - pip check
     - pyperformance --help
