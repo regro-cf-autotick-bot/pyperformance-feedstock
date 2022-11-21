@@ -1,5 +1,5 @@
 {% set name = "pyperformance" %}
-{% set version = "1.0.5" %}
+{% set version = "1.0.6" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pyperformance-{{ version }}.tar.gz
-  sha256: 2f4c49aa745a3a5c5b4755329def42fd97e54f9be7ecf10f2edfb4cfa47c6f07
+  sha256: 674fff4ade04766358fa13e8591dd8715303c9c4904db2615403a7b34da1485b
 
 build:
   number: 0
