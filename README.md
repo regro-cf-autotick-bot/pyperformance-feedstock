@@ -1,11 +1,11 @@
-About pyperformance
-===================
+About pyperformance-feedstock
+=============================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pyperformance-feedstock/blob/main/LICENSE.txt)
 
 Home: https://pyperformance.readthedocs.io
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pyperformance-feedstock/blob/main/LICENSE.txt)
 
 Summary: Python benchmark suite
 
