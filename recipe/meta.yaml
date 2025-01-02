@@ -6,11 +6,11 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pyperformance-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/pyperformance-{{ version }}.tar.gz
   sha256: 674fff4ade04766358fa13e8591dd8715303c9c4904db2615403a7b34da1485b
 
 build:
-  number: 0
+  number: 1
   noarch: python
   entry_points:
     - pyperformance=pyperformance.cli:main
@@ -18,10 +18,10 @@ build:
 
 requirements:
   host:
-    - python >=3.6
+    - python {{ python_min }}
     - pip
   run:
-    - python >=3.6
+    - python >={{ python_min }}
     - packaging
     - pyperf
     - toml
@@ -34,6 +34,7 @@ test:
     - pyperformance --help
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: https://pyperformance.readthedocs.io
